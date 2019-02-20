@@ -1,0 +1,153 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: helvetica;
+	color: #ffffff;
+	background-color: #212529;
+	padding: 10px;
+	font-family: "Space Mono", monospace;
+	background-image: linear-gradient(to right bottom,
+		#000000,
+		#482325,
+		#8c4531,
+		#c6742c,
+		#ebb212);
+}
+
+.logo {
+	width: 250px;
+	margin: 0 auto;
+	display: block;
+}
+
+.days {
+	text-align: center;
+	font-size: 3rem;
+}
+
+h2 {
+	text-align: center;
+	display: block;
+	width: 100%;
+}
+
+.container {
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	width: 580px;
+}
+
+.column2 {
+	display: inline-flex;
+	width: 100%;
+	height: 250px;
+	background-color: #5252524e;
+	margin: 0 auto 1rem;
+	border-radius: 10px;
+}
+
+.column3 {
+	width: 100%;
+	display: inline-flex;
+	flex-direction: column;
+	background-color: #5252524e;
+	height: 250px;
+	margin: 0 auto 1rem;
+	border-radius: 10px;
+}
+
+.fuelContainer,
+.contentContainer {
+	display: block;
+	height: 50px;
+	width: 90%;
+	margin: 3rem auto 0;
+	position: relative;
+}
+
+.column2 .contentContainer {
+	width: unset;
+}
+
+.fuelLevel {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 50px;
+	width: 100%;
+	background-color: green;
+}
+
+.fuelLevel.fuelMidLevel {
+	background-color: yellow;
+}
+
+.fuelLevel.fuelReserve {
+	background-color: red;
+}
+
+.fuelMessage {
+	display: block;
+	width: 100%;
+	margin: 4rem auto 0;
+	font-weight: bold;
+	font-size: 1rem;
+	color: red;
+	position: relative;
+}
+
+.speedCurrent,
+.distMars,
+.distTravelled,
+.gravity,
+.oxygen,
+.foodGlobal,
+.foodPerson,
+.waterGlobal,
+.waterPerson {
+	display: block;
+	width: 100%;
+	margin: auto 0;
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: white;
+	position: relative;
+}
+
+.fdSection {
+	display: inline-flex;
+	width: 100%;
+}
+
+.fdSection .column2 {
+	display: block;
+	margin: 0 auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media screen and (min-width: 1024px) {
+	.container {
+		width: 1000px;
+	}
+
+	.column2 {
+		width: 45%;
+		margin: 0 auto 1rem;
+	}
+
+	.column3 {
+		width: 30%;
+		margin: 0 auto 1rem;
+		display: inline-flex;
+		text-align: center;
+	}
+}
