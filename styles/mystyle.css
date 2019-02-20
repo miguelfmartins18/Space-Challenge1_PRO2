@@ -41,7 +41,7 @@ h2 {
 }
 
 .column2 {
-	display: inline-flex;
+	display: block;
 	width: 100%;
 	height: 250px;
 	background-color: #5252524e;
@@ -118,7 +118,7 @@ h2 {
 }
 
 .fdSection {
-	display: inline-flex;
+	display: block;
 	width: 100%;
 }
 
@@ -139,7 +139,12 @@ h2 {
 		width: 1000px;
 	}
 
+	.fdSection {
+		display: inline-flex;
+	}
+
 	.column2 {
+		display: inline-flex;
 		width: 45%;
 		margin: 0 auto 1rem;
 	}
